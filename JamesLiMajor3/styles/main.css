@@ -1,0 +1,28 @@
+box {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+section {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
