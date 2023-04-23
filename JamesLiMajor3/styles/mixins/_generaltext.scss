@@ -1,0 +1,14 @@
+@import '../variables.scss';
+h2{
+    font-family: $headerfontfamily;
+}
+h1{
+    font-family: $headerfontfamily;
+    text-align: center;
+    font-weight: bolder;
+    font-size: $hsize;
+}
+p{
+    font-family: $pfontfamily;
+    font-size: $psize;
+}
