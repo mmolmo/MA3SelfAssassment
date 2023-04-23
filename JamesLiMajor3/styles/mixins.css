@@ -9,6 +9,10 @@ h1 {
   font-size: 40px;
 }
 
+#gridhead {
+  color: white;
+}
+
 p {
   font-family: Arial;
   font-size: 20px;
@@ -97,7 +101,35 @@ p {
     grid-column: auto;
   }
 }
+@media only screen and (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    padding: 40px;
+  }
+  .long {
+    display: grid;
+    grid-row: 1/span 3;
+    grid-column: auto;
+  }
+}
 @media only screen and (min-width: 1300px) {
+  .grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    padding: 40px;
+  }
+  .long {
+    display: grid;
+    grid-row: 1/span 3;
+    grid-column: auto;
+  }
+}
+@media only screen and (min-width: 2000px) {
   .grid {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -116,7 +148,6 @@ p {
   grid-gap: 10px;
   }*/
 section {
-  border: 1px solid #ccc;
   padding: 20px;
 }
 
@@ -126,6 +157,11 @@ img {
 
 .myjourney {
   padding: 40px;
+}
+
+#currentjourney {
+  padding: 40px;
+  background-color: black;
 }
 
 .conclusion {

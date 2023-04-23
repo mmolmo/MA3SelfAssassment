@@ -1,5 +1,4 @@
 section {
-    border: 1px solid #ccc;
     padding: 20px;
     }
     
@@ -9,6 +8,10 @@ section {
     
     .myjourney{
         padding: 40px;
+    }
+    #currentjourney{
+        padding: 40px;
+        background-color: $gridbgcolor;
     }
     .conclusion{
         padding: 40px;
