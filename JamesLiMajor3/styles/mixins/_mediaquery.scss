@@ -60,10 +60,12 @@
       grid-row: 1 / span 3;
       grid-column: auto;
   }
-  .content {
+  .bloc {
     display: grid;
-    grid-template-rows: 300px 300px;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .img{
+    max-width: 1fr;
   }
   }
   

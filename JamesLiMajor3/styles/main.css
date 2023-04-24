@@ -82,6 +82,7 @@ p {
 }
 
 .content {
+  display: grid;
   padding: 20px;
   background-color: #ffcc00;
 }
@@ -92,14 +93,6 @@ p {
 }
 
 /*other elements in the grid as well*/
-.text {
-  display: grid;
-}
-
-.img {
-  display: grid;
-}
-
 /*imports grid queries*/
 /*media queries for all screen sizes*/
 /*screen size before or after 800 px*/
@@ -162,10 +155,12 @@ p {
     grid-row: 1/span 3;
     grid-column: auto;
   }
-  .content {
+  .bloc {
     display: grid;
-    grid-template-rows: 300px 300px;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .img {
+    max-width: 1fr;
   }
 }
 /*main {

@@ -13,6 +13,7 @@
       background-color: $altcontentbgcolor;
   }
   .content {
+    display:grid;
     padding: 20px;
     background-color: $contentbgcolor;
   }
@@ -21,11 +22,5 @@
     grid-template-rows: auto auto;
   }
   /*other elements in the grid as well*/
-  .text{
-    display: grid;
-  }
-  .img{
-    display: grid;
-  }
 /*imports grid queries*/
 @import '_mediaquery'
