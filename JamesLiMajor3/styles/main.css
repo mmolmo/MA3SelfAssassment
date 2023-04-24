@@ -82,11 +82,13 @@ p {
 }
 
 .content {
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(300px));
-  grid-template-columns: repeat(auto-fit, minmax(300px));
   padding: 20px;
   background-color: #ffcc00;
+}
+
+.test {
+  display: grid;
+  grid-template-rows: auto auto;
 }
 
 /*other elements in the grid as well*/
@@ -96,7 +98,6 @@ p {
 
 .img {
   display: grid;
-  grid-column: auto;
 }
 
 /*imports grid queries*/
@@ -110,10 +111,12 @@ p {
     grid-gap: 40px;
     padding: 40px;
   }
+  .content {
+    display: grid;
+    grid-template-rows: auto;
+  }
   .long {
     display: none;
-    grid-row: 1/span 3;
-    grid-column: auto;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -145,8 +148,8 @@ p {
     grid-column: auto;
   }
 }
-/*screen size over 2000 px*/
-@media only screen and (min-width: 2000px) {
+/*screen size over 1600 px*/
+@media only screen and (min-width: 1600px) {
   .grid {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -158,6 +161,11 @@ p {
     display: grid;
     grid-row: 1/span 3;
     grid-column: auto;
+  }
+  .content {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 300px 300px;
   }
 }
 /*main {
