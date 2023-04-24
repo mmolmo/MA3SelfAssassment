@@ -1,5 +1,5 @@
 @import '../variables.scss';
-//styling for navbar
+/*styling for navbar*/
 .navbar {
     background-color: $navbgcolor;
     display: flex;
@@ -7,32 +7,31 @@
     align-items: center;
     padding: 20px;
   }
-
-  .navbar img {
-    height: 40px;
-  }
-  #navlist {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+.navbar img {
+  height: 40px;
+}
+#navlist {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
     
-  }
-  .navbar li {
-    padding: $psize;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .navbar a {
-    color: $altcontentbgcolor;
-    text-decoration: none;
-    font-size: $psize;
-    font-family: $headerfontfamily;
-    text-transform: uppercase;
-  }
-  .navbar li:hover{
-    background-color: rgb(56, 56, 56);
-  }
+}
+.navbar li {
+  padding: $psize;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar a {
+  color: $altcontentbgcolor;
+  text-decoration: none;
+  font-size: $psize;
+  font-family: $headerfontfamily;
+  text-transform: uppercase;
+}
+.navbar li:hover{
+  background-color: rgb(56, 56, 56);
+}

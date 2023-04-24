@@ -1,4 +1,5 @@
-  // Media queries
+/*media queries for all screen sizes*/
+  /*screen size before or after 800 px*/
   @media only screen and (max-width: 800px) {
     .grid {
         display: grid;
@@ -27,8 +28,7 @@
           grid-column: auto;
       }
       }
-
-    // Media queries
+  /*screen size over 1300 px*/
   @media only screen and (min-width: 1300px) {
     .grid {
         display: grid;
@@ -43,7 +43,7 @@
         grid-column: auto;
     }
     }
-    // Media queries
+  /*screen size over 2000 px*/
   @media only screen and (min-width: 2000px) {
     .grid {
       display: grid;

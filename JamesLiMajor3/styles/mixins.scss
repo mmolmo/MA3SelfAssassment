@@ -1,4 +1,6 @@
+/*imports variables first*/
 @import 'variables';
+/*imports all mixins partials located in mixins folder*/
 @import '../styles/mixins/generaltext';
 @import '../styles/mixins/navbar';
 @import '../styles/mixins/grid';

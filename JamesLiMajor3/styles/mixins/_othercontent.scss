@@ -1,22 +1,22 @@
+/*stylng for other content that is not related to grids*/
 section {
     padding: 20px;
-    }
+}
     
-    img {
+img {
     max-width: 100%;
-    }
+}
     
-    .myjourney{
-        padding: 40px;
-    }
-    #currentjourney{
-        padding: 40px;
-        background-color: $gridbgcolor;
-    }
-    .conclusion{
-        padding: 40px;
-    }
-    .img{
-        background-color: $altcontentbgcolor;
-        margin: 10px;
-    }
+.myjourney{
+    padding: 40px;
+}
+#currentjourney{
+    padding: 40px;
+    background-color: $gridbgcolor;
+}
+.conclusion{
+    padding: 40px;
+}
+.img{
+    margin: 10px;
+}

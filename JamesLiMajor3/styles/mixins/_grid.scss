@@ -1,13 +1,25 @@
 @import '../variables.scss';
+/*used for the general visual styling of the grid in the webpage not including media queries*/
 // Grid system
+  .grid {
+    display: grid;
+    background-color: $gridbgcolor;
+  }
+  /*section/cell content inside grid*/
+  .long{
+      display: grid;
+      grid-row: 1 / span 3;
+      grid-column: auto;
+      background-color: $altcontentbgcolor;
+  }
   .content {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(300px));
     grid-template-columns: repeat(auto-fit, minmax(300px));
     padding: 20px;
     background-color: $contentbgcolor;
-
   }
+  /*other elements in the grid as well*/
   .text{
     display: grid;
   }
@@ -15,15 +27,5 @@
     display: grid;
     grid-column: auto;
   }
-  .grid {
-    display: grid;
-    background-color: $gridbgcolor;
-  }
-  .long{
-      display: grid;
-      grid-row: 1 / span 3;
-      grid-column: auto;
-      background-color: $altcontentbgcolor;
-  }
-    
+/*imports grid queries*/
 @import '_mediaquery'

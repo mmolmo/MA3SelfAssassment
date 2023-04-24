@@ -1,4 +1,9 @@
+/*imports all of the main scss docs to be used in the styling of this webpage*/
 @import "normalize.css";
+/*imports variables first*/ /*imports partial files for font and color variables*/ /*font styling choices*/ /*color styling choices*/
+/*imports all mixins partials located in mixins folder*/
+/*imports partial files for font and color variables*/ /*font styling choices*/ /*color styling choices*/
+/*general font styling for fonts*/
 h2 {
   font-family: Helvetica;
 }
@@ -19,6 +24,8 @@ p {
   font-size: 20px;
 }
 
+/*imports partial files for font and color variables*/ /*font styling choices*/ /*color styling choices*/
+/*styling for navbar*/
 .navbar {
   background-color: black;
   display: flex;
@@ -59,6 +66,21 @@ p {
   background-color: rgb(56, 56, 56);
 }
 
+/*imports partial files for font and color variables*/ /*font styling choices*/ /*color styling choices*/
+/*used for the general visual styling of the grid in the webpage not including media queries*/
+.grid {
+  display: grid;
+  background-color: black;
+}
+
+/*section/cell content inside grid*/
+.long {
+  display: grid;
+  grid-row: 1/span 3;
+  grid-column: auto;
+  background-color: white;
+}
+
 .content {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(300px));
@@ -67,6 +89,7 @@ p {
   background-color: #ffcc00;
 }
 
+/*other elements in the grid as well*/
 .text {
   display: grid;
 }
@@ -76,18 +99,9 @@ p {
   grid-column: auto;
 }
 
-.grid {
-  display: grid;
-  background-color: black;
-}
-
-.long {
-  display: grid;
-  grid-row: 1/span 3;
-  grid-column: auto;
-  background-color: white;
-}
-
+/*imports grid queries*/
+/*media queries for all screen sizes*/
+/*screen size before or after 800 px*/
 @media only screen and (max-width: 800px) {
   .grid {
     display: grid;
@@ -116,6 +130,7 @@ p {
     grid-column: auto;
   }
 }
+/*screen size over 1300 px*/
 @media only screen and (min-width: 1300px) {
   .grid {
     display: grid;
@@ -130,6 +145,7 @@ p {
     grid-column: auto;
   }
 }
+/*screen size over 2000 px*/
 @media only screen and (min-width: 2000px) {
   .grid {
     display: grid;
@@ -148,6 +164,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
   }*/
+/*stylng for other content that is not related to grids*/
 section {
   padding: 20px;
 }
@@ -170,6 +187,7 @@ img {
 }
 
 .img {
-  background-color: white;
   margin: 10px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*imports partial files for font and color variables*/ /*font styling choices*/ /*color styling choices*//*# sourceMappingURL=main.css.map */
